@@ -10,14 +10,14 @@ const config: Config = {
     colors: {
       purple: "#AD1FEA",
       blue: "#4661E6",
-      "light-blue": "#62BCFA",
+      lightBlue: "#62BCFA",
       peach: "#F49F85",
       black: "#373F68",
-      "light-black": "#3A4374",
+      lightBlack: "#3A4374",
       gray: "#647196",
       white: "#FFFFFF",
-      "dark-white": "#F2F4FF",
-      "medium-white": "#F7F8FD",
+      darkWhite: "#F2F4FF",
+      mediumWhite: "#F7F8FD",
     },
     fontFamily: {
       sans: ["Jost", "Helvetica", "sans-serif"],
@@ -89,6 +89,8 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    
+  ],
 };
 export default config;

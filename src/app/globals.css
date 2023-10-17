@@ -2,4 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/csss2?family=Jost:wght@400;700;900&display=swap');
+@layer base {
+  h1 {
+    @apply text-h1;
+  }
+  h2 {
+    @apply text-h2;
+  }
+  h3 {
+    @apply text-h3;
+  }
+  h4 {
+    @apply text-h4;
+  }
+  button {
+    @apply hover:opacity-[0.9] rounded;
+  }
+}
+
+@layer components {
+  button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  .btn {
+    text-align: center;
+    border-radius: 0.6rem;
+    width: 10rem;
+    height: 3rem;
+    flex-shrink: 0;
+  }
+  .purple-btn {
+    @apply bg-purple h-[3rem] w-[10rem] text-center text-darkWhite rounded;
+  }
+
+  .blue-btn {
+    @apply bg-blue h-[3rem] w-[10rem] text-center text-darkWhite rounded;
+  }
+
+  .black-btn {
+    @apply bg-black h-[3rem] w-[10rem] text-center text-darkWhite rounded;
+  }
+
+  .peach-btn {
+    @apply bg-peach h-[3rem] w-[10rem] text-center text-darkWhite rounded;
+  }
+}
+@import url("https://fonts.googleapis.com/csss2?family=Jost:wght@400;700;900&display=swap");
